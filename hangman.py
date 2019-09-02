@@ -16,9 +16,17 @@ def main():
 
     first_pick = raw_input("Hello, Please select your first letter: ")
 
-    for char in computer_pick:
-        if char in guess:
+    for i in possible_answers:
+        print(possible_answers)
+
+        if first_pick == char in possible_answers:
             print(char)
+
+    # for char in computer_pick:
+    #     print("letter", char)
+
+    #     if char in first_pick == char in computer_pick:
+    #         print("pick", char)
 
 
 if __name__ == '__main__':
