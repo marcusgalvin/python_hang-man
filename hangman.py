@@ -12,21 +12,16 @@ guess = ""
 def main():
     # the cimputer will select a random word to have user guess
     computer_pick = random.choice(possible_answers)
-    print(computer_pick)
+    print("computer chose word: ", computer_pick)
 
     first_pick = raw_input("Hello, Please select your first letter: ")
 
-    for i in possible_answers:
-        print(possible_answers)
+    # for marble in computer_pick:
+    #     print(marble)
 
-        if first_pick == char in possible_answers:
-            print(char)
 
-    # for char in computer_pick:
-    #     print("letter", char)
-
-    #     if char in first_pick == char in computer_pick:
-    #         print("pick", char)
+def findLetters(first_pick, computer_pick):
+    return all(letter in computer_pick for letter in first_pick)
 
 
 if __name__ == '__main__':
